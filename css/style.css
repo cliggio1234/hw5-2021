@@ -55,7 +55,12 @@ header p{
 nav a{
   color: black;
   font-weight: bold;
+  text-decoration: none;
 
+
+}
+nav a:hover{
+  text-decoration: underline;
 }
 /*Req 2*/
 /*Write selector/rule property to add an underline when
@@ -93,7 +98,10 @@ header{
     
   /*Req 6a*/
   /*Set margin */
-    
+  margin-bottom: 25px;
+  background-image: url('header.jpg');
+  background-repeat: no-repeat;   
+ 
   /*Req 6b*/
   /*Set background-image to header.jpg */
  
@@ -101,6 +109,7 @@ header{
 }
 /*Req 7a*/
 .about, .method, .client, .contacts{
+
   /*Your Code Here*/
 
 }
@@ -140,6 +149,7 @@ header{
   background-color: rgba(255, 255, 255, .8);
   border: 10px solid black;
   padding: 30px;
+  
   /*Your code here:*/
 
 }
