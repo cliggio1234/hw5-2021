@@ -56,6 +56,7 @@ nav a{
   color: black;
   font-weight: bold;
   text-decoration: none !important;
+  grid-row: 1/ span 1;
 
 
 }
@@ -98,7 +99,7 @@ nav a:hover{
   display: grid;
   grid-template-columns: 1fr 3fr 3fr 1fr;
   grid-template-rows: auto;
-  grid-row-gap: 20px;
+  row-gap: 20px;
 }
 
 header{
@@ -114,6 +115,7 @@ header{
   margin-bottom: 25px;
   background-image: url('../images/header.jpg');
   background-repeat: no-repeat;   
+  grid-row: 2/ span 1;
  
   /*Req 6b*/
   /*Set background-image to header.jpg */
@@ -123,6 +125,7 @@ header{
 /*Req 7a*/
 .about, .method, .client, .contacts{
   grid-column: 2/ span 1;
+  grid-row: first-line / 1;
   
 
   /*Your Code Here*/
@@ -131,6 +134,10 @@ header{
 
 /*Req 8a, 8b, and 8c*/
 .about-image, .method-image, .client-image, .contact-image{
+  grid-column: 1/ span -1;
+  max-height: 650px;
+  overflow: hidden;
+  
   /*Your Code Here*/
 
 }
@@ -138,17 +145,23 @@ header{
 /*Req 7b & 8d*/
 .about, .about-image{
    /*Your Code Here*/
+   grid-row: 3/ span 1;
+
 
 }
 
 /*Req 7b & 8d*/
 .method, .method-image{
+  grid-row: 4/ span 1;
+
+  
    /*Your Code Here*/
 
 }
 
 /*Req 7b & 8d*/
 .client, .client-image{
+  grid-row: 5/ span1;
     /*Your Code Here*/
 
 }
@@ -156,6 +169,7 @@ header{
 /*Req 7b & 8d*/
 .contacts, .contact-image{
     /*Your Code Here*/
+  grid-row: 6/ span 2;
 
 }
 
@@ -164,6 +178,8 @@ header{
   background-color: rgba(255, 255, 255, .8);
   border: 10px solid black;
   padding: 30px;
+  text-align: center;
+  
   
   /*Your code here:*/
 
