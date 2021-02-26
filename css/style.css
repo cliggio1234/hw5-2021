@@ -114,11 +114,7 @@ header{
   /*Set margin */
   margin-bottom: 25px;
   background-image: url('../images/header.jpg'); 
-  background-color: black;
-  background-repeat: no-repeat;   
-  grid-row: 2/ span 1;
-  grid-column: 1/ -1;
- 
+
   /*Req 6b*/
   /*Set background-image to header.jpg */
  
